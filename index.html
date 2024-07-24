@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Document</title>
 </head>
 <body>
@@ -65,7 +67,43 @@
         </section>
     </div>
     
+    <!-- Div 4 password generator -->
+    <div class="container center">
+        <section id="password-generator">
+            <h2>Password Generator</h2>
+            <div class="afichage">
+                <input type="text" id="result" readonly >
+                <button id="copy">
+                    <i class="fa-regular fa-clipboard"></i>
+                </button>
+
+            </div>
+            <div class="settings">
+                <label for="">Password Length</label>
+                <input type="number" name="4" max="20" min="6" id="length" value="10">
+            </div>
+            <div class="settings">
+                <label for="">Include uppercase letters</label>
+                <input type="checkbox"  id="uppercase">
+            </div>
+            <div class="settings">
+                <label for="">Include lowercase letters</label>
+                <input type="checkbox"  id="lowercase">
+            </div>
+            <div class="settings">
+                <label for="">Include numbers</label>
+                <input type="checkbox"  id="numbers">
+            </div>
+            <div class="settings">
+                <label for="">Include symbols</label>
+                <input type="checkbox"  id="symbols">
+            </div>
+            <button id="generate">Generate Password</button>
+        </section>
+    </div>
+    
     <script src="js/script.js"></script>
     <script src="js/live-user-filter.js"></script>
+    <script src="js/password-generator.js"></script>
 </body>
 </html>
